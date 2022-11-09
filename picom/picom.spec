@@ -1,5 +1,4 @@
 # Note: compton fork renamed to 'picom' since version 7.5
-# A change to version_tag must also be applied to Source0
 %global version_tag r2_1
 %global version_num 2.1
 %global oldname compton-ng
@@ -11,7 +10,7 @@ Summary:        Lightweight compositor for X11 (previously a compton fork)
 
 License:        MPLv2.0 and MIT
 URL:            https://github.com/regolith-linux/picom
-Source0:        https://github.com/regolith-linux/picom/archive/refs/tags/r2_1.tar.gz
+Source0:        %{url}/archive/%{version_tag}.tar.gz
 
 BuildRequires:  asciidoc
 BuildRequires:  desktop-file-utils
